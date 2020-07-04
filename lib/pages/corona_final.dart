@@ -228,7 +228,7 @@ class _FeatureListState extends State<FeatureList> {
                                 borderRadius: BorderRadius.circular(32),
                                 color: col,
                               ),
-                              width: 150,
+                              width: 138,
                               height: 240,
                               child: Padding(
                                 padding: const EdgeInsets.all(12.0),

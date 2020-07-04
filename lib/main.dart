@@ -3,19 +3,15 @@ import 'package:coronaApp/pages/home.dart';
 import 'package:coronaApp/pages/hometab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'dart:async';
-import 'package:shimmer/shimmer.dart';
 import 'package:coronaApp/widgets/map.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(
-      //accentColor: Color(0xFF4A6572),
-    ),
-      initialRoute:'/home' ,
+      initialRoute:'/' ,
     routes: {
-        // '/':(context)=>Splash(),
+      '/':(context)=>Splash(),
       '/home':(context)=>Home(),
       '/had':(context)=>Hometab(),
       '/her':(context)=>Coronatab(),
@@ -31,40 +27,37 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
+  final spinkit = SpinKitFadingCircle(
+    color: Colors.deepOrange,
+    //size: 50.0,
+  );
   @override
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 6),
         (){
-          Navigator.pushReplacementNamed(context, '/home');
+          Navigator.pushReplacement(
+              context, MaterialPageRoute(builder: (BuildContext context) => Home()));
         },);
   }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-        backgroundColor: Colors.white,
+        //backgroundColor: Colors.white,
+        backgroundColor: Colors.blueGrey[50],
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            SizedBox(height: MediaQuery.of(context).size.height/3),
             Center(
-              child:Shimmer.fromColors(
-                baseColor: Colors.black,
-                highlightColor: Colors.lime,
-                period: Duration(seconds: 2),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children:<Widget>[
-                    Icon(
-                      Icons.all_inclusive,
-                      size:300,
-                    ),
-                  ]
-              ),),),
-            Center(
-              child:Text('50-Hands Organisation',style: TextStyle(fontFamily: 'Pacifier',fontSize: 30),),
+              child: Image(image:AssetImage('assets/images/final_logo.png'),
+                width: MediaQuery.of(context).size.width/1.3,),
             ),
+            SizedBox(height: MediaQuery.of(context).size.height/4),
+            SpinKitSquareCircle(
+            color: Colors.blue,
+            ),
+
           ],
         )
     );

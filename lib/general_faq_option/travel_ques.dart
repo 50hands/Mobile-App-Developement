@@ -4,9 +4,9 @@ class TravelInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Color(0xFF344955),
       appBar: AppBar(
-        
+        backgroundColor: Color(0xFF344955),
         title: Padding(
           padding: const EdgeInsets.only(top: 8.0),
           child: Text(

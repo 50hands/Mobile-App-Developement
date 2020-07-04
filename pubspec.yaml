@@ -40,6 +40,7 @@ dependencies:
   html: ^0.14.0+3
   validators: ^2.0.0+1
   dio: ^3.0.9
+  flutter_spinkit: ^4.1.2+1
 
 
 
@@ -61,10 +62,10 @@ dev_dependencies:
 flutter_icons:
     android : "launcher_icon"
     ios : true
-    image_path : 'assets/icons/Logo.png'
+    image_path : 'assets/images/final_logo.png'
 
 flutter_launcher_name:
-     name: '50-Hands Org'
+     name: '50 Hands'
 
 
 # For information on the generic Dart part of this file, see the

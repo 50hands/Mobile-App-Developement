@@ -1,7 +1,6 @@
 import 'package:coronaApp/pages/hometab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:coronaApp/widgets/info_card.dart';
 import 'package:http/http.dart' as http;
