@@ -273,7 +273,7 @@ class Worldcard extends StatelessWidget {
                         ),
                         InfoCard(
                          // title: 'Recovered',
-                           title: AppLocalizations.of(context).translate('confirmed'),
+                           title: AppLocalizations.of(context).translate('recovered'),
                           iconColor: Colors.green,
                           effectedNum: wdata['TotalRecovered'].toString(),
                         ),
