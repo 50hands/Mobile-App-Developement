@@ -29,5 +29,10 @@
   "newsTrends": "News Trends",
   "latest": "Latest",
   "refresh": "Refresh",
-  "refreshed": "Refreshed..."
+  "refreshed": "Refreshed...",
+  "homeTab_motivation": "Our Motivation:",
+  "homeTab_motivationText": "Canada discovered Insulin and gave the patent free to the world so that it could be available for all. Yet today, We struggle to get Medical Supplies for our own citizens.\\n \\n 50-Hands Organization is established to galvanize the Canadian Volunteer & Maker community to support the Government and other institutions to address community challenges.",
+  "homeTab_vision": "Our Vision:",
+  "homeTab_visionText": "Using Data Driven- Models , 50-Hands intend to provide crowd sourced solutions @scale that shall make a long-lasting difference to Canadians as well as Global Citizens in need. "
+
 }
