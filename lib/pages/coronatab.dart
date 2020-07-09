@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 import 'dart:core';
+import 'package:coronaApp/app_localizations.dart';
 
 class Coronatab extends StatefulWidget {
   @override
@@ -96,7 +97,7 @@ class _CoronatabState extends State<Coronatab> {
                 child: Column(
                   children: [
 //                    Text(
-//                      "Total Corona Cases Around",
+//                      AppLocalizations.of(context).translate('title'),
 //                      style: TextStyle(
 //                          fontWeight: FontWeight.bold,
 //                          fontSize: 15),
@@ -132,7 +133,7 @@ class _CoronatabState extends State<Coronatab> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Precautions For Covid-19',
+                  AppLocalizations.of(context).translate('precautions'),
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -141,26 +142,31 @@ class _CoronatabState extends State<Coronatab> {
                 children: [
                   Precautionstab(
                     address: "assets/icons/use_mask.svg",
-                    title: "Use Masks",
+                   // title: "Use Masks",
+                    title: AppLocalizations.of(context).translate('precautions_1'),
                   ),
                   Precautionstab(
                     address: "assets/icons/hand_wash.svg",
-                    title: "Wash Hands",
+                   // title: "Wash Hands",
+                     title: AppLocalizations.of(context).translate('precautions_2'),
                   ),
                   Precautionstab(
                     address: "assets/icons/Clean_Disinfect.svg",
-                    title: "Disinfectants",
+                   // title: "Disinfectants",
+                     title: AppLocalizations.of(context).translate('precautions_3'),
                   ),
                   Precautionstab(
                     address: "assets/icons/distance.svg",
-                    title: "\t\tSocial\nDistancing",
+                //    title: "\t\tSocial\nDistancing",
+                      title: AppLocalizations.of(context).translate('precautions_4'),
                   ),
                 ],
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  'Symptoms of Covid-19',
+                //  'Symptoms of Covid-19',
+                  AppLocalizations.of(context).translate('symptoms'),
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -169,19 +175,23 @@ class _CoronatabState extends State<Coronatab> {
                 children: [
                   Symtab(
                     address: 'assets/images/1.png',
-                    title: "Fever",
+                  //  title: "Fever",
+                    title: AppLocalizations.of(context).translate('symptoms_1'),
                   ),
                   Symtab(
                     address: "assets/images/2.png",
-                    title: "Cough",
+                 //   title: "Cough",
+                    title: AppLocalizations.of(context).translate('symptoms_2'),
                   ),
                   Symtab(
                     address: "assets/images/3.png",
-                    title: "Head-Ache",
+                 //   title: "Head-Ache",
+                    title: AppLocalizations.of(context).translate('symptoms_3'),
                   ),
                   Symtab(
                     address: "assets/images/4.png",
-                    title: "Breathing",
+                  //  title: "Breathing",
+                    title: AppLocalizations.of(context).translate('symptoms_4'),
                   ),
                 ],
               ),
@@ -253,7 +263,8 @@ class Worldcard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         InfoCard(
-                          title: 'Confirmed',
+                          //title: 'Confirmed',
+                           title: AppLocalizations.of(context).translate('confirmed'),
                           iconColor: Colors.blue,
                           effectedNum: wdata['TotalConfirmed'].toString(),
                         ),
@@ -261,7 +272,8 @@ class Worldcard extends StatelessWidget {
                           height: 10,
                         ),
                         InfoCard(
-                          title: 'Recovered',
+                         // title: 'Recovered',
+                           title: AppLocalizations.of(context).translate('confirmed'),
                           iconColor: Colors.green,
                           effectedNum: wdata['TotalRecovered'].toString(),
                         ),
@@ -269,7 +281,8 @@ class Worldcard extends StatelessWidget {
                           height: 10,
                         ),
                         InfoCard(
-                          title: 'Deaths',
+                          //title: 'Deaths',
+                           title: AppLocalizations.of(context).translate('deaths'),
                           iconColor: Colors.red,
                           effectedNum: wdata['TotalDeaths'].toString(),
                         ),
@@ -404,7 +417,8 @@ class Countrycard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         InfoCard(
-                          title: 'Confirmed',
+                         // title: 'Confirmed',
+                           title: AppLocalizations.of(context).translate('confirmed'),
                           iconColor: Colors.blue,
                           effectedNum:
                               data[data.length - 1]['Confirmed'].toString(),
@@ -413,7 +427,8 @@ class Countrycard extends StatelessWidget {
                           width: 5,
                         ),
                         InfoCard(
-                          title: 'Recovered',
+                         // title: 'Recovered',
+                           title: AppLocalizations.of(context).translate('recovered'),
                           iconColor: Colors.green,
                           effectedNum:
                               data[data.length - 1]['Recovered'].toString(),
@@ -424,7 +439,8 @@ class Countrycard extends StatelessWidget {
                         Row(
                           children: <Widget>[
                             InfoCard(
-                              title: 'Deaths',
+                          //    title: 'Deaths',
+                               title: AppLocalizations.of(context).translate('deaths'),
                               iconColor: Colors.red,
                               effectedNum:
                                   data[data.length - 1]['Deaths'].toString(),
