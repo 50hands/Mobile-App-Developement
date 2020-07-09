@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
         items: [
           FFNavigationBarItem(
             iconData: Icons.new_releases,
-              label: AppLocalizations.of(context).translate("features"),
+              label: AppLocalizations.of(context).translate("bottomTab_features"),
 
           ),
           FFNavigationBarItem(
