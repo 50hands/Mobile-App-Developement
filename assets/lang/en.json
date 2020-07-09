@@ -6,6 +6,7 @@
   "deaths" : "Deaths",
   "cases" : "Cases",
   "new" : "New",
+  "bottomTab_features": "Features",
   "precautions" : "Precautions For COVID-19",
   "precautions_1" : "Use Masks",
   "precautions_2" : "Wash Hands",
