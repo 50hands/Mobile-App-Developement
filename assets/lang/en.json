@@ -1,0 +1,32 @@
+{
+
+  "title" : "Total Corona Cases Around",
+  "confirmed" : "Confirmed",
+  "recovered" : "Recovered",
+  "deaths" : "Deaths",
+  "cases" : "Cases",
+  "new" : "New",
+  "precautions" : "Precautions For COVID-19",
+  "precautions_1" : "Use Masks",
+  "precautions_2" : "Wash Hands",
+  "precautions_3" : "Disinfect",
+  "precautions_4" : "\nSocial\nDistancing",
+  "symptoms" : "Symptoms",
+  "symptoms_1" : "Fever",
+  "symptoms_2" : "Cough",
+  "symptoms_3" : "Headache",
+  "symptoms_4" : "Breathing Problems",
+
+  "bottomTab_faq" : "FAQ",
+  "bottomTab_support": "Support",
+  "bottomTab_home": "Home",
+  "bottomTab_corona" : "Corona",
+  "bottomTab_help" : "Help",
+
+  "coronaTrends": "Corona Trends",
+  "canadaTrends": "Trends in Canada",
+  "newsTrends": "News Trends",
+  "latest": "Latest",
+  "refresh": "Refresh",
+  "refreshed": "Refreshed..."
+}

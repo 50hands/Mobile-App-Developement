@@ -1,0 +1,31 @@
+{
+  "title" : "Nombre total de cas Corona autour",
+  "confirmed" : "Confirmé",
+  "recovered" : "Rétabli",
+  "deaths" : "Décès",
+  "cases" : "Étuis",
+  "new" : "Nouveau",
+  "precautions" : "Précautions pour COVID-19",
+  "precautions_1" : "Utiliser des masques",
+  "precautions_2" : "Laver les mains",
+  "precautions_3" : "Désinfecter",
+  "precautions_4" : "\nDistanciation\nsociale",
+  "symptoms" : "Symptômes de COVID-19",
+    "symptoms_1" : "Fièvre",
+  "symptoms_2" : "Toux",
+  "symptoms_3" : "Mal de crâne",
+  "symptoms_4" : "Problèmes de\nrespiration",
+
+  "bottomTab_faq" : "FAQ",
+  "bottomTab_support": "Soutien",
+  "bottomTab_home": "Accueil",
+  "bottomTab_corona" : "Corona",
+  "bottomTab_help" : "Aidez",
+
+  "coronaTrends": "Tendances Corona",
+  "canadaTrends": "Tendances au Canada",
+  "newsTrends": "Tendances\nnouvelles",
+  "latest": "Dernier",
+  "refresh": "Recharger",
+  "refreshed": "Rechargé..."
+}
