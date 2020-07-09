@@ -15,7 +15,7 @@
     "symptoms_1" : "Fièvre",
   "symptoms_2" : "Toux",
   "symptoms_3" : "Mal de crâne",
-  "symptoms_4" : "Problèmes de\nrespiration",
+  "symptoms_4" : "\nProblèmes de\nrespiration",
 
   "bottomTab_faq" : "FAQ",
   "bottomTab_support": "Soutien",
@@ -28,5 +28,11 @@
   "newsTrends": "Tendances\nnouvelles",
   "latest": "Dernier",
   "refresh": "Recharger",
-  "refreshed": "Rechargé..."
+  "refreshed": "Rechargé...",
+
+  "homeTab_motivation": "Notre Motivation : ",
+  "homeTab_motivationText": "Le Canada a découvert l'insuline et a donné le brevet gratuitement au monde afin qu'il soit disponible pour tous. Pourtant, aujourd'hui, nous luttons pour obtenir des fournitures médicales pour nos propres citoyens.\n \n Une organisation à 50-Hands est créée pour galvaniser la communauté canadienne des bénévoles et des artisans afin d'aider le gouvernement et d'autres institutions à relever les défis de la communauté.",
+  "homeTab_vision": "Notre Vision : ",
+  "homeTab_visionText": "À l'aide de modèles basés sur les données, 50-Hands a l'intention de fournir des solutions issues de la foule à grande échelle qui feront une différence durable pour les Canadiens et les citoyens du monde dans le besoin. "
+
 }
