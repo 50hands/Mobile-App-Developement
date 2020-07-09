@@ -5,7 +5,7 @@ import 'package:coronaApp/pages/help.dart';
 import 'package:coronaApp/pages/payment.dart';
 import 'package:flutter/material.dart';
 import 'package:ff_navigation_bar/ff_navigation_bar.dart';
-
+import '../app_localizations.dart';
 import 'corona_final.dart';
 
 
@@ -59,16 +59,16 @@ class _HomeState extends State<Home> {
         items: [
           FFNavigationBarItem(
             iconData: Icons.new_releases,
-              label: "Features",
+              label: AppLocalizations.of(context).tanslate("features"),
 
           ),
           FFNavigationBarItem(
             iconData: Icons.healing,
-            label: "Support",
+            label: AppLocalizations.of(context).translate("bottomTab_support"),
           ),
           FFNavigationBarItem(
             iconData: Icons.home,
-            label: 'Home',
+            label: AppLocalizations.of(context).translate("bottomTab_home"),
 
           ),
           FFNavigationBarItem(
@@ -79,7 +79,7 @@ class _HomeState extends State<Home> {
           ),
           FFNavigationBarItem(
             iconData: Icons.help,
-            label: 'Help',
+            label: AppLocalizations.of(context).translate("bottomTab_help"),
 
           ),
         ],
