@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/rendering.dart';
 
+import '../app_localizations.dart';
+
 
 class Hometab extends StatefulWidget {
   @override
@@ -43,7 +45,10 @@ class _HometabState extends State<Hometab> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Center(
-                          child: Text('Our Motivation :',style: TextStyle(
+                          child: Text(
+                            //'Our Motivation :',
+                            AppLocalizations.of(context).translate("homeTab_motivation"),
+                        style: TextStyle(
                             fontSize: 20,
                             fontFamily: '',
                             fontWeight: FontWeight.bold,
@@ -54,7 +59,10 @@ class _HometabState extends State<Hometab> {
 
                         SizedBox(height: 10,),
 
-                        Text('Canada discovered Insulin and gave the patent free to the world so that its available for All .Yet today , We struggle to get Medical Supplies for our own citizens.\n \n 50-Hands Organization is established to galvanize the Canadian Volunteer & Maker community to support the Government and other institutions to address community challenges.  ',style: TextStyle(
+                        Text(
+                          //'Canada discovered Insulin and gave the patent free to the world so that its available for All .Yet today , We struggle to get Medical Supplies for our own citizens.\n \n 50-Hands Organization is established to galvanize the Canadian Volunteer & Maker community to support the Government and other institutions to address community challenges.  '
+                            AppLocalizations.of(context).translate("homeTab_motivationText"),
+                          style: TextStyle(
                           fontSize: 15,
                           fontFamily: '',
                           fontWeight: FontWeight.normal,
@@ -100,7 +108,10 @@ class _HometabState extends State<Hometab> {
                               children: <Widget>[
                                 SizedBox(height: 5,),
                               Center(
-                                child: Text('Our Vision : ',style: TextStyle(
+                                child: Text(
+                                  //'Our Vision : ',
+                                 AppLocalizations.of(context).translate("homeTab_vision"),
+                                  style: TextStyle(
                                 fontSize: 20,
                                 fontFamily: '',
                                 fontWeight: FontWeight.bold,
@@ -110,7 +121,10 @@ class _HometabState extends State<Hometab> {
                                   Divider(indent:60,endIndent: 60,color: Color(0xFFF9AA33),thickness: 2,),
 
                                 SizedBox(height: 10,),
-                              Text('Using Data Driven- Models , 50-Hands intend to provide crowd sourced solutions @scale that shall make a long-lasting difference to Canadians as well as Global Citizens in need. ',style: TextStyle(
+                              Text(
+                                //'Using Data Driven- Models , 50-Hands intend to provide crowd sourced solutions @scale that shall make a long-lasting difference to Canadians as well as Global Citizens in need. ',
+                                AppLocalizations.of(context).translate("homeTab_visionText"),
+                                style: TextStyle(
                               fontSize: 15,
                               fontFamily: '',
                                 fontWeight: FontWeight.normal,
