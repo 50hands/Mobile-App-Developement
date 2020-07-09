@@ -18,7 +18,7 @@ void main() {
     
   localizationsDelegates: [
   AppLocalizations.delegate,
-  lobalMaterialLocalizations.delegate,
+  GlobalMaterialLocalizations.delegate,
   GlobalWidgetsLocalizations.delegate,
     ],
     
