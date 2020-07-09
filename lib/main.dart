@@ -5,10 +5,32 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:coronaApp/widgets/map.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 
 void main() {
   runApp(MaterialApp(
+    
+    supportedLocales: [
+  Locale('en','US'),
+  Locale('fr','FR'),
+],
+    
+  localizationsDelegates: [
+  AppLocalizations.delegate,
+  lobalMaterialLocalizations.delegate,
+  GlobalWidgetsLocalizations.delegate,
+    ],
+    
+    localeResolutionCallback: (locale, supportedLocales) {
+          for (var supportedLocale in supportedLocales) {
+            if (supportedLocale.languageCode == locale.languageCode && supportedLocale.countryCode == locale.countryCode) {
+              return supportedLocale;
+            }
+        }
+          return supportedLocales.first;
+      },
+    
       initialRoute:'/' ,
     routes: {
       '/':(context)=>Splash(),
