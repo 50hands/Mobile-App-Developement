@@ -5,6 +5,7 @@ import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:coronaApp/app_localizations.dart';
 
 void main() => runApp(Payment());
 
@@ -26,7 +27,9 @@ class _PaymentState extends State<Payment> {
   List<int> money = [700, 1400, 30 * 70, 40 * 70, 50 * 70, 60 * 70, 100 * 70];
   List<String> choices = [
     'Be a Volunteer',
+    //AppLocalizations.of(context).translate('supportTab_volunteer'),
     'Organisation',
+   // AppLocalizations.of(context).translate('supportTab_organization'),
   ];
   Razorpay _razorpay;
   bool show = false;
@@ -55,7 +58,8 @@ class _PaymentState extends State<Payment> {
           title: Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: Text(
-              "Support Us",
+             // "Support Us",
+              AppLocalizations.of(context).translate('support'),
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.w600,
@@ -70,7 +74,9 @@ class _PaymentState extends State<Payment> {
               offset: Offset.zero,
               padding: EdgeInsets.all(8),
               elevation: 5,
-              tooltip: 'More Ways to help',
+              tooltip:
+              AppLocalizations.of(context).translate('supportTab_tooltip'),
+            //  'More Ways to help',
               itemBuilder: (BuildContext context) {
                 return choices.map((String choice) {
                   return PopupMenuItem(
@@ -112,7 +118,8 @@ class _PaymentState extends State<Payment> {
                           child: Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Text(
-                                "50-Hands Organization is established to galvanize the Canadian Volunteer & Maker community to support the Government and other institutions to address community challenges.",
+                               // "50-Hands Organization is established to galvanize the Canadian Volunteer & Maker community to support the Government and other institutions to address community challenges.",
+                               AppLocalizations.of(context).translate('supportTab_aboutText'),
                                 textAlign: TextAlign.justify,
                                 style:
                                     TextStyle(letterSpacing: 0, fontSize: 16)),
@@ -204,7 +211,8 @@ class _PaymentState extends State<Payment> {
                                       padding:
                                           const EdgeInsets.only(bottom: 8.0),
                                       child: AutoSizeText(
-                                        'Make your Donations Here ',
+                                     //   'Make your Donations Here ',
+                                       AppLocalizations.of(context).translate('supportTab_donations'),
                                         style: TextStyle(
                                           fontSize: 22,
                                           color: Colors.black,
@@ -225,7 +233,8 @@ class _PaymentState extends State<Payment> {
                                     Padding(
                                       padding: const EdgeInsets.only(left: 8.0),
                                       child: Text(
-                                        'Remember that the happiest people are not those getting more but those giving more',
+                                      // 'Remember that the happiest people are not those getting more but those giving more',
+                                        AppLocalizations.of(context).translate('supportTab_message'),
                                         style: TextStyle(
                                           fontSize: 14,
                                           color: Colors.black,
@@ -382,7 +391,10 @@ class _PaymentState extends State<Payment> {
                                           icon: Icon(
                                             Icons.monetization_on,
                                           ),
-                                          label: Text('other'),
+                                          label: Text(
+                                            //  'other'
+                                            AppLocalizations.of(context).translate('supportTab_paymentOther'),
+                                          ),
                                           textColor: pressAttention[6]
                                               ? Colors.grey
                                               : Color(0xFFF9AA33),
@@ -419,7 +431,8 @@ class _PaymentState extends State<Payment> {
                                       controlAffinity:
                                           ListTileControlAffinity.leading,
                                       title: AutoSizeText(
-                                        'For Greater Good',
+                                        //  'For Greater Good',
+                                        AppLocalizations.of(context).translate('supportTab_donationCheckbox'),
                                         style: TextStyle(fontSize: 20),
                                         minFontSize: 8,
                                         maxLines: 1,
@@ -436,7 +449,8 @@ class _PaymentState extends State<Payment> {
                                     ),
                                     Center(
                                       child: Text(
-                                        'Recurring Contribution:',
+                                      //  'Recurring Contribution:',
+                                        AppLocalizations.of(context).translate('supportTab_RC'),
                                         style: TextStyle(
                                           fontSize: 20,
                                           color: Colors.black,
@@ -456,7 +470,8 @@ class _PaymentState extends State<Payment> {
                                     Padding(
                                       padding: const EdgeInsets.only(left: 8.0),
                                       child: Text(
-                                        'Give Monthly for the greater good every needy step off their sidelines!!:',
+                                       // 'Give Monthly for the greater good every needy step off their sidelines!!:',
+                                        AppLocalizations.of(context).translate('supportTab_bottomMessage'),
                                         style: TextStyle(
                                           fontSize: 14,
                                           color: Colors.black,
@@ -472,7 +487,8 @@ class _PaymentState extends State<Payment> {
                                       controlAffinity:
                                           ListTileControlAffinity.leading,
                                       title: AutoSizeText(
-                                        'Let Me remind every month',
+                                       // 'Let Me remind every month',
+                                        AppLocalizations.of(context).translate('supportTab_bottomCheckbox'),
                                         style: TextStyle(fontSize: 20),
                                         minFontSize: 8,
                                         maxLines: 1,
@@ -499,7 +515,8 @@ class _PaymentState extends State<Payment> {
                                                 if (show == true &&
                                                     mon.isEmpty) {
                                                   Fluttertoast.showToast(
-                                                      msg: "Enter the amount",
+                                                    //  msg: "Enter the amount",
+                                                  msg:    AppLocalizations.of(context).translate('supportTab_prompt1'),
                                                       toastLength:
                                                           Toast.LENGTH_SHORT);
                                                 } else {
@@ -507,7 +524,8 @@ class _PaymentState extends State<Payment> {
                                                 }
                                               } else {
                                                 Fluttertoast.showToast(
-                                                    msg: "Check Box is ticked",
+                                                    msg: //"Check Box is ticked",
+                                                    AppLocalizations.of(context).translate('supportTab_prompt2'),
                                                     toastLength:
                                                         Toast.LENGTH_SHORT);
                                                 setState(() {
@@ -520,7 +538,8 @@ class _PaymentState extends State<Payment> {
                                               highlightColor: Colors.grey,
                                               period: Duration(seconds: 2),
                                               child: Text(
-                                                'Donate',
+                                               // 'Donate',
+                                                AppLocalizations.of(context).translate('supportTab_donate'),
                                                 style: TextStyle(fontSize: 18),
                                               ),
                                             )),
@@ -592,12 +611,16 @@ class _PaymentState extends State<Payment> {
 
   void _handlePaymentSuccess(PaymentSuccessResponse response) {
     Fluttertoast.showToast(
-        msg: "SUCCESS: " + response.paymentId, toastLength: Toast.LENGTH_SHORT);
+        msg: "SUCCESS: "
+        //AppLocalizations.of(context).translate("suupportTab_success")
+            + response.paymentId, toastLength: Toast.LENGTH_SHORT);
   }
 
   void _handlePaymentError(PaymentFailureResponse response) {
     Fluttertoast.showToast(
-        msg: "ERROR: " + response.code.toString() + " - " + response.message,
+        msg: "ERROR: "
+        //AppLocalizations.of(context).translate("supportTab_error")
+            + response.code.toString() + " - " + response.message,
         toastLength: Toast.LENGTH_SHORT);
   }
 
