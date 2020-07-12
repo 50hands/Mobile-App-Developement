@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:coronaApp/widgets/map.dart';
-
+import 'package:coronaApp/app_localizations.dart';
 import 'help_numbers.dart';
 
 class Help extends StatefulWidget {
@@ -50,7 +50,8 @@ class _HelpState extends State<Help> {
                         height: 15,
                       ),
                       Text(
-                        "Are you feeling sick?",
+                        //"Are you feeling sick?",
+                        AppLocalizations.of(context).translate('helpTab_top'),
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
@@ -60,7 +61,9 @@ class _HelpState extends State<Help> {
                       SizedBox(
                         height: 15,
                       ),
-                      Text("If you feel sick with any COVID-19 Symptoms",
+                      Text(
+                          //"If you feel sick with any COVID-19 Symptoms",
+                        AppLocalizations.of(context).translate("helpTab_message1"),
                           style: TextStyle(
                             fontSize: 15,
                             color: Colors.white,
@@ -69,7 +72,8 @@ class _HelpState extends State<Help> {
                         height: 5,
                       ),
                       Text(
-                        "Please call immediately for help.",
+                        AppLocalizations.of(context).translate("helpTab_message2"),
+                        //"Please call immediately for help.",
                         style: TextStyle(fontSize: 15, color: Colors.white),
                       ),
                       SizedBox(
@@ -120,7 +124,8 @@ class _HelpState extends State<Help> {
                                     color: Colors.blueAccent,
                                   ),
                                   Text(
-                                    "Helpline",
+                                   //"Helpline",
+                                    AppLocalizations.of(context).translate("helpTab_helpline"),
                                     style: TextStyle(
                                         color: Colors.blueAccent,
                                         fontWeight: FontWeight.bold),
@@ -138,7 +143,9 @@ class _HelpState extends State<Help> {
               SizedBox(
                 height: 15,
               ),
-              Text("Testing Centers Near By",
+              Text(
+                  //"Testing Centers Near By",
+                AppLocalizations.of(context).translate("helpTab_text"),
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
