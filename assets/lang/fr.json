@@ -33,6 +33,30 @@
   "homeTab_motivation": "Notre Motivation : ",
   "homeTab_motivationText": "Le Canada a découvert l'insuline et a donné le brevet gratuitement au monde afin qu'il soit disponible pour tous. Pourtant, aujourd'hui, nous luttons pour obtenir des fournitures médicales pour nos propres citoyens.\n \n Une organisation à 50-Hands est créée pour galvaniser la communauté canadienne des bénévoles et des artisans afin d'aider le gouvernement et d'autres institutions à relever les défis de la communauté.",
   "homeTab_vision": "Notre Vision : ",
-  "homeTab_visionText": "À l'aide de modèles basés sur les données, 50-Hands a l'intention de fournir des solutions issues de la foule à grande échelle qui feront une différence durable pour les Canadiens et les citoyens du monde dans le besoin. "
+  "homeTab_visionText": "À l'aide de modèles basés sur les données, 50-Hands a l'intention de fournir des solutions issues de la foule à grande échelle qui feront une différence durable pour les Canadiens et les citoyens du monde dans le besoin. ",
+
+  "supportTab_volunteer": "Soyez bénévole",
+  "supportTab_organization": "Organisation",
+  "support": "Soutenez-nous",
+  "supportTab_tooltip": "Plus de façons d'aider",
+  "supportTab_aboutText": "L'organisation 50-Hands est créée pour galvaniser la communauté canadienne des bénévoles et des artisans afin d'aider le gouvernement et d'autres institutions à relever les défis de la communauté.",
+  "supportTab_donations": "Faites vos dons ici",
+  "supportTab_message": "N'oubliez pas que les personnes les plus heureuses ne sont pas celles qui obtiennent plus mais celles qui donnent plus",
+  "supportTab_paymentOther": "Autre",
+  "supportTab_donationCheckbox": "Pour un plus grand bien",
+  "supportTab_RC": "Contribution récurrente:",
+  "supportTab_bottomMessage": "Donnez mensuel pour le plus grand bien à chaque étape dans le besoin !!:",
+  "supportTab_bottomCheckbox": "Rappelle-moi chaque mois",
+  "supportTab_prompt1": "Entrez le montant",
+  "supportTab_prompt2":"La case est cochée",
+  "supportTab_donate": "Faire un don",
+  "supportTab_success": "SUCCÈS",
+  "supportTab_error": "ERREUR",
+
+  "helpTab_top": "Vous sentez-vous malade?",
+  "helpTab_message1": "Si vous vous sentez malade avec des symptômes de COVID-19",
+  "helpTab_message2": "Veuillez appeler de l'aide immédiatement",
+  "helpTab_helpline": "Assistance"
+
 
 }
