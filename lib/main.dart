@@ -7,6 +7,8 @@ import 'package:coronaApp/widgets/map.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+import 'app_localizations.dart';
+
 
 void main() {
   runApp(MaterialApp(
