@@ -57,6 +57,19 @@
   "helpTab_message1": "Si vous vous sentez malade avec des symptômes de COVID-19",
   "helpTab_message2": "Veuillez appeler de l'aide immédiatement",
   "helpTab_helpline": "Assistance",
-  "helpTab_text": "Centres de test à proximité"
+  "helpTab_text": "Centres de test à proximité",
+
+  "Covid Insights": "Covid Insights",
+  "Around Me": "Autour de moi",
+  "Jobs": "Emplois",
+  "Blogs": "Blogs",
+
+  "desc1": "Analyse approfondie de Covid-19",
+  "desc2": "Événements, écoles, hôpitaux,...",
+    "desc3": "Trouver ou louer",
+  "desc4": "Vous voulez lire quelque chose",
+
+  "news_1": "Nouvelles Tendances",
+  "features_topBar": "Que cherchez-vous?"
 
 }
