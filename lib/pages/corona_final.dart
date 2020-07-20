@@ -4,6 +4,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import '../app_localizations.dart';
 import 'screen_kunj.dart';
 
 class FeatureList extends StatefulWidget {
@@ -15,10 +16,10 @@ class _FeatureListState extends State<FeatureList> {
   List tabName = ['Covid Insights', 'Around Me', 'Jobs', 'Blogs'];
 
   List desc = [
-    'Deep Analysis of Covid-19',
-    'Events,School,Hospital...',
-    'Find or Hire',
-    'Want to Read Something'
+    'desc1',
+    'desc2',
+    'desc3',
+    'desc4'
   ];
 
   List color = [
@@ -81,7 +82,7 @@ class _FeatureListState extends State<FeatureList> {
               Navigator.of(context).push(PageRouteBuilder(
                 pageBuilder: (context, animation, secondaryAnimation) =>
                     URLLauncher(
-                  title: " Imapcts of Corona in Canada",
+                  title: " Imapacts of Corona in Canada",
                   selectedUrl: "${links[0]}",
                 ),
                 transitionsBuilder:
@@ -192,7 +193,7 @@ class _FeatureListState extends State<FeatureList> {
                 Padding(
                   padding: const EdgeInsets.only(left: 8, bottom: 4),
                   child: Text(
-                    'What are you looking for?',
+                    AppLocalizations.of(context).translate("features_topBar"),
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 26,
@@ -207,8 +208,9 @@ class _FeatureListState extends State<FeatureList> {
                       shrinkWrap: true,
                       itemCount: tabName.length,
                       itemBuilder: (BuildContext ctxt, int index) {
-                        String head = tabName[index];
-                        String descr = desc[index];
+                        String head = AppLocalizations.of(context).translate(tabName[index]);
+                        //tabName[index];
+                        String descr = AppLocalizations.of(context).translate(desc[index]);
                         Color col = color[index];
                         String img = images[index];
                         return Padding(
@@ -287,7 +289,7 @@ class _FeatureListState extends State<FeatureList> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 16, 16, 0),
                   child: ListTile(
-                      title: Text("News in Trend",
+                      title: Text(AppLocalizations.of(context).translate("news_1"),
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
@@ -296,7 +298,9 @@ class _FeatureListState extends State<FeatureList> {
                       trailing: GestureDetector(
                           onTap: () {
                             Fluttertoast.showToast(
-                                msg: "Refreshed...",
+                                msg: //
+                                AppLocalizations.of(context).translate("refreshed"),
+                                // "Refreshed...",
                                 toastLength: Toast.LENGTH_SHORT,
                                 gravity: ToastGravity.CENTER,
                                 timeInSecForIosWeb: 1,
